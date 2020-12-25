@@ -16,7 +16,7 @@ async function checkPrice(page) {
     //console.log(html);
 
     $('#priceblock_ourprice', html).each(function() {
-        let dollarPrice = $(this).innerHTML;
+        let dollarPrice = $(this).text();
         console.log("result : ", dollarPrice);
     });
 }
